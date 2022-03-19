@@ -4,17 +4,17 @@
   "description": "A Extension To Read PTT In Full Dark Mode",
   "version": "1.0.0",
   "browser_action": {
-    "default_icon": "icon.png", 
-    "default_popup": "popup.html"
+    "default_icon": "asset/icon.png", 
+    "default_popup": "asset/popup.html"
   },
   "content_scripts": [
     {
       "matches": ["https://www.ptt.cc/bbs/*/M*"],
-      "js": ["articleScript.js"]
+      "js": ["scripts/articleScript.js"]
     },
 	{
       "matches": ["https://www.ptt.cc/bbs/*/index*"],
-      "js": ["indexScript.js"]
+      "js": ["scripts/indexScript.js"]
     }
   ]
 }
