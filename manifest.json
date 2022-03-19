@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "SFWPttExtension",
+  "description": "A Extension To Read PTT In Full Dark Mode",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_icon": "icon.png", 
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.ptt.cc/bbs/*/M*"],
+      "js": ["articleScript.js"]
+    },
+	{
+      "matches": ["https://www.ptt.cc/bbs/*/index*"],
+      "js": ["indexScript.js"]
+    }
+  ]
+}
